@@ -25,7 +25,7 @@ app.use('/api/v1/users',require('./routes/userRoute'))
 app.use('/api/v1/transcations',require('./routes/transactionRoute'))
 
 // Port
-const PORT = 5000 || process.env.PORT
+const PORT = process.env.PORT || 5000;
 
 // Listen server
 app.listen(PORT,()=>{
